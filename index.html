@@ -13,26 +13,26 @@
 <div class="layout"><section class="panel">
 <h2>Poster information</h2>
 <div class="field"><label>YMA branch</label><input id="branch" value="NEW SERCHHIP BAZAR BRANCH"></div>
-<div class="field"><label>Poster heading</label><input id="heading" value="ZUALKO"></div>
-<div class="field"><label>Date / reference</label><input id="refdate" value="10/2026"></div>
+<div class="field"><label>Poster heading</label><input id="heading" value="" placeholder="e.g. ZUALKO"></div>
+<div class="field"><label>Date / reference</label><input id="refdate" value="" placeholder="e.g. 10/2026"></div>
 <div class="field"><label>Portrait photograph</label><input id="photo" type="file" accept="image/*"><div class="file-note">Use a clear, front-facing portrait.</div></div>
-<div class="field"><label>Member's full name</label><input id="fullname" value="H. LALBIAKFELA (MABIAKA)"></div>
-<div class="two"><div class="field"><label>Age</label><input id="age" value="42"></div><div class="field"><label>Village / locality</label><input id="village" value="A NUPUI - ZOREMSIAMI"></div></div>
+<div class="field"><label>Member's full name</label><input id="fullname" value="" placeholder="Member full name"></div>
+<div class="two"><div class="field"><label>Age</label><input id="age" value="" placeholder="Age"></div><div class="field"><label>Village / locality</label><input id="village" value="" placeholder="Village / locality"></div></div>
 <div class="section"><h2>YMA statistics</h2>
-<div class="two"><div class="field"><label>Kumin dinhmun</label><input id="statTitle" value="KUMIN DINHMUN"></div><div class="field"><label>Ruang chhuak</label><input id="ruang" value="2"></div></div>
-<div class="two"><div class="field"><label>Mipa</label><input id="mipa" value="7"></div><div class="field"><label>Hmeichhia</label><input id="hmei" value="3"></div></div>
-<div class="field"><label>Total</label><input id="total" value="10"></div></div>
+<div class="two"><div class="field"><label>Kumin dinhmun</label><input id="statTitle" value="KUMIN DINHMUN"></div><div class="field"><label>Ruang chhuak</label><input id="ruang" value="" placeholder="0"></div></div>
+<div class="two"><div class="field"><label>Mipa</label><input id="mipa" value="" placeholder="0"></div><div class="field"><label>Hmeichhia</label><input id="hmei" value="" placeholder="0"></div></div>
+<div class="field"><label>Total</label><input id="total" value="" placeholder="0"></div></div>
 <div class="section"><h2>Funeral details</h2>
-<div class="field"><label>Thih chhan (cause)</label><input id="cause" value="Cancer"></div>
-<div class="field"><label>Thih hun (date and time)</label><input id="death" value="Ni 29 Aug. 2026 Dar 2:45a.m"></div>
-<div class="field"><label>Vui hun (date and time)</label><input id="funeral" value="Ni 29 Aug. 2026 Dar 1:00p.m"></div>
-<div class="field"><label>Kohhran</label><input id="church" value="Presbyterian"></div>
-<div class="field"><label>Closing message</label><textarea id="message">A ruang hi Hmuntha a lak tur a ni a, amah hi YMA member a ni e.</textarea></div></div>
+<div class="field"><label>Thih chhan (cause)</label><input id="cause" value=""></div>
+<div class="field"><label>Thih hun (date and time)</label><input id="death" value=""></div>
+<div class="field"><label>Vui hun (date and time)</label><input id="funeral" value=""></div>
+<div class="field"><label>Kohhran</label><input id="church" value=""></div>
+<div class="field"><label>Closing message</label><textarea id="message"></textarea></div></div>
 <div class="section"><h2>Location map</h2>
 <div class="field"><label>Search a place</label><div class="two"><input id="placeSearch" placeholder="e.g. New Serchhip Bazar"><button class="btn" id="searchPlace" type="button">Search</button></div></div>
 <div class="map-actions"><button id="streetBtn" class="active" type="button">Street</button><button id="satBtn" type="button">Satellite</button></div>
 <div id="mapPicker" style="height:230px;border-radius:9px;overflow:hidden"></div>
-<div class="field" style="margin-top:10px"><label>Map label</label><input id="mapLabel" value="Mithhi In"></div>
+<div class="field" style="margin-top:10px"><label>Map label</label><input id="mapLabel" value="Location"></div>
 <p class="hint">Tap or click the map to place the marker. Drag the marker to adjust it. Search uses OpenStreetMap's public geocoder; please avoid repeated automated searches.</p>
 </div>
 <div class="actions"><button class="btn primary" id="pngBtn" type="button">Download PNG</button><button class="btn" id="pdfBtn" type="button">Download PDF</button><button class="btn" id="resetBtn" type="button">Reset example</button></div>
@@ -41,10 +41,10 @@
 <section class="panel"><h2>Live poster preview</h2><div class="preview-wrap"><article class="poster" id="poster">
 <div class="poster-head"><div class="org">YOUNG MIZO ASSOCIATION</div><div class="branch" id="pBranch">NEW SERCHHIP BAZAR BRANCH</div></div>
 <div class="stripes"><div class="stripe"></div><div class="stripe black"></div><div class="seal">YMA<br>✦<br>ESTD.</div></div>
-<div class="identity"><div class="portrait" id="portrait"><span>UPLOAD<br>PORTRAIT</span></div><div class="identity-right"><div class="name"><span id="pHeading">ZUALKO</span> <small>(<span id="pDate">10/2026</span>)</small></div><div class="black-card"><div id="pFullname">H. LALBIAKFELA (MABIAKA)</div><div>KUM - <span id="pAge">42</span></div><div id="pVillage">A NUPUI - ZOREMSIAMI</div></div></div></div>
-<div class="details"><div class="stats"><div><div style="text-align:center;margin-bottom:5px" id="pStatTitle">KUMIN DINHMUN</div><div class="statline"><span>MIPA</span><span id="pMipa">- 7</span></div><div class="statline"><span>HMEICHHIA</span><span id="pHmei">- 3</span></div><div class="statline"><span>TOTAL</span><span id="pTotal">- 10</span></div></div><div class="statline"><span>RUANG CHHUAK</span><span id="pRuang">- 2</span></div></div>
-<div class="facts"><div class="fact"><span>Thih chhan</span><span>: <span id="pCause">Cancer</span></span></div><div class="fact"><span>Thih hun</span><span>: <span id="pDeath">Ni 29 Aug. 2026 Dar 2:45a.m</span></span></div><div class="fact"><span>Vui hun</span><span>: <span id="pFuneral">Ni 29 Aug. 2026 Dar 1:00p.m</span></span></div><div class="fact"><span>Kohhran</span><span>: <span id="pChurch">Presbyterian</span></span></div><div class="motto" id="pMessage">A ruang hi Hmuntha a lak tur a ni a, amah hi YMA member a ni e.</div></div></div>
-<div class="map-frame"><div id="posterMap"></div><div class="map-label" id="pMapLabel">Mithhi In</div></div>
+<div class="identity"><div class="portrait" id="portrait"><span>UPLOAD<br>PORTRAIT</span></div><div class="identity-right"><div class="name"><span id="pHeading"></span> <small>(<span id="pDate"></span>)</small></div><div class="black-card"><div id="pFullname"></div><div>KUM - <span id="pAge"></span></div><div id="pVillage"></div></div></div></div>
+<div class="details"><div class="stats"><div><div style="text-align:center;margin-bottom:5px" id="pStatTitle">KUMIN DINHMUN</div><div class="statline"><span>MIPA</span><span id="pMipa">- </span></div><div class="statline"><span>HMEICHHIA</span><span id="pHmei">- </span></div><div class="statline"><span>TOTAL</span><span id="pTotal">- </span></div></div><div class="statline"><span>RUANG CHHUAK</span><span id="pRuang">- </span></div></div>
+<div class="facts"><div class="fact"><span>Thih chhan</span><span>: <span id="pCause"></span></span></div><div class="fact"><span>Thih hun</span><span>: <span id="pDeath"></span></span></div><div class="fact"><span>Vui hun</span><span>: <span id="pFuneral"></span></span></div><div class="fact"><span>Kohhran</span><span>: <span id="pChurch"></span></span></div><div class="motto" id="pMessage"></div></div></div>
+<div class="map-frame"><div id="posterMap"></div><div class="map-label" id="pMapLabel">Location</div></div>
 </article></div></section></div></main>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
@@ -66,5 +66,5 @@ function setStatus(s){$('status').textContent=s}
 async function renderCanvas(){update();setStatus('Preparing high-resolution poster…');await new Promise(r=>setTimeout(r,900));const node=$('poster');const canvas=await html2canvas(node,{scale:2,useCORS:true,allowTaint:false,backgroundColor:'#ffffff',logging:false});return canvas}
 $('pngBtn').onclick=async()=>{try{const c=await renderCanvas();const a=document.createElement('a');a.download='YMA-Zualko-Poster.png';a.href=c.toDataURL('image/png');a.click();setStatus('PNG downloaded.')}catch(e){setStatus('Export failed. If the map tiles are blocked by the map provider, try the street layer or export again.')}};
 $('pdfBtn').onclick=async()=>{try{const c=await renderCanvas();const {jsPDF}=window.jspdf;const pdf=new jsPDF({orientation:'portrait',unit:'mm',format:'a4'});pdf.addImage(c.toDataURL('image/png'),'PNG',0,0,210,297);pdf.save('YMA-Zualko-Poster.pdf');setStatus('PDF downloaded.')}catch(e){setStatus('PDF export failed. Try again or switch map layer.')}};
-$('resetBtn').onclick=()=>{const defaults={branch:'NEW SERCHHIP BAZAR BRANCH',heading:'ZUALKO',refdate:'10/2026',fullname:'H. LALBIAKFELA (MABIAKA)',age:'42',village:'A NUPUI - ZOREMSIAMI',statTitle:'KUMIN DINHMUN',mipa:'7',hmei:'3',total:'10',ruang:'2',cause:'Cancer',death:'Ni 29 Aug. 2026 Dar 2:45a.m',funeral:'Ni 29 Aug. 2026 Dar 1:00p.m',church:'Presbyterian',message:'A ruang hi Hmuntha a lak tur a ni a, amah hi YMA member a ni a.',mapLabel:'Mithhi In'};for(const [k,v] of Object.entries(defaults))$(k).value=v;$('photo').value='';$('portrait').innerHTML='<span>UPLOAD<br>PORTRAIT</span>';picker.setView(start,16);marker.setLatLng(start);syncMap();update();setStatus('Example restored.')};update();
+$('resetBtn').onclick=()=>{const defaults={branch:'NEW SERCHHIP BAZAR BRANCH',heading:'',refdate:'',fullname:'',age:'',village:'',statTitle:'KUMIN DINHMUN',mipa:'',hmei:'',total:'',ruang:'',cause:'',death:'',funeral:'',church:'',message:'',mapLabel:'Location'};for(const [k,v] of Object.entries(defaults))$(k).value=v;$('photo').value='';$('portrait').innerHTML='<span>UPLOAD<br>PORTRAIT</span>';picker.setView(start,16);marker.setLatLng(start);syncMap();update();setStatus('Example restored.')};update();
 </script></body></html>
